@@ -1,0 +1,73 @@
+// documents
+import page from './documents/page'
+// import news from './documents/news'
+// import publications from './documents/publications'
+// import interactiveData from './documents/interactiveData'
+// import videosPodcasts from './documents/videosPodcasts'
+// import author from './documents/author'
+// import advisoryBoard from './documents/advisoryBoard'
+// import event from './documents/event'
+// import project from './documents/project'
+// import trainingPack from './documents/trainingPack'
+// import resource from './documents/resource'
+// import resourceCategory from './documents/resourceCategory'
+// import team from './documents/team'
+
+// singletons
+// import settings from './singletons/settings'
+
+// objects
+// import projectBlocks from './projectBlocks'
+import blockBuilder from './blockBuilder'
+import link from './link'
+import blockContent from './blockContent'
+
+// blocks
+import hero from './blocks/hero'
+import imageTextSplit from './blocks/imageTextSplit'
+import featureText from './blocks/featureText'
+import events from './blocks/events'
+import slider from './blocks/slider'
+import banner from './blocks/banner'
+import cta from './blocks/cta'
+import sliderFull from './blocks/sliderFull'
+import imageThreeTile from './blocks/imageThreeTile'
+import ctaSmall from './blocks/ctaSmall'
+import sliderSmall from './blocks/sliderSmall'
+import splitImage from './blocks/splitImage'
+import sliderEvents from './blocks/sliderEvents'
+import faq from './blocks/faq'
+import featureImage from './blocks/featureImage'
+import contact from './blocks/contact'
+import golf from './blocks/golf'
+
+
+
+
+import seo from './seo'
+
+const documents = [page]
+// const singletons = [settings]
+const objects = [blockBuilder, link, seo]
+const blocks = [
+    hero, 
+    imageTextSplit,
+    featureText,
+    featureImage,
+    events,
+    slider,
+    banner,
+    cta,
+    sliderFull,
+    imageThreeTile,
+    ctaSmall,
+    sliderSmall,
+    splitImage,
+    sliderEvents,
+    faq,
+    contact,
+    golf,
+]
+
+
+export const schemaTypes = [...documents, ...objects, ...blocks]
