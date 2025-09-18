@@ -20,7 +20,6 @@ import page from './documents/page'
 // import projectBlocks from './projectBlocks'
 import blockBuilder from './blockBuilder'
 import link from './link'
-import blockContent from './blockContent'
 
 // blocks
 import hero from './blocks/hero'
