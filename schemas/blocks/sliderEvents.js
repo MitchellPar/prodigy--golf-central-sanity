@@ -23,6 +23,12 @@ export default defineType({
             title: 'Event',
             fields: [
                 {
+                    name: 'link',
+                    title: 'Link',
+                    type: 'string',
+                    description: 'Add a link.',
+                },
+                {
                     name: 'month',
                     title: 'Month',
                     type: 'string',

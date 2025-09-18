@@ -19,6 +19,17 @@ export default defineType({
       description: 'Add a alt title.',
     },
     {
+      name: 'linkText',
+      title: 'LinkText',
+      type: 'string',
+      description: 'Add link text.',
+  },
+  {
+      name: 'buttonLink',
+      title: 'Button Link',
+      type: 'link',
+  },
+    {
         name: 'events',
         title: 'Events',
         type: 'array',
@@ -28,6 +39,12 @@ export default defineType({
             name: 'event',
             title: 'Event',
             fields: [
+                {
+                    name: 'link',
+                    title: 'Link',
+                    type: 'string',
+                    description: 'Add a link.',
+                },
                 {
                     name: 'month',
                     title: 'Month',
@@ -75,17 +92,7 @@ export default defineType({
                       }
                     ]
                 },
-                // {
-                //     name: 'linkText',
-                //     title: 'LinkText',
-                //     type: 'string',
-                //     description: 'Add link text.',
-                // },
-                // {
-                //     name: 'buttonLink',
-                //     title: 'Button Link',
-                //     type: 'link',
-                // },
+      
             ]
         }]
     },

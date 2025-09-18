@@ -32,7 +32,8 @@ export default defineType({
                 {title: 'Medium Padding', value: 'medium'}, 
                 {title: 'Small Padding', value: 'small'}, 
                 {title: 'First Item Padding', value: 'firstItem'},
-                {title: 'No Padding', value: 'noPadding'}
+                {title: 'No Padding', value: 'noPadding'},
+                {title: 'No Padding Last', value: 'noPaddingLast'}
             ],
             layout: 'radio'
         },
@@ -50,6 +51,62 @@ export default defineType({
       type: 'string',
       description: 'Add a sub title.',
     },
+    {
+      name: 'contentTitle',
+      title: 'Content Title',
+      type: 'string',
+      description: 'Add a content title.',
+    },
+    {
+      name: 'contentAltTitle',
+      title: 'Content Alt Title',
+      type: 'string',
+      description: 'Add a content alt title.',
+    },
+    {
+      name: 'content',
+      title: 'Content',
+      type: 'text',
+      description: 'Add content.',
+    },
+    {
+      name: 'lists',
+      title: 'Lists',
+      type: 'array',
+      description: 'Add lists to the lists',
+      of: [{
+          type: 'object',
+          name: 'list',
+          title: 'List',
+          fields: [
+              {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  description: 'Add a title.',
+              },
+              {
+                  name: 'listItems',
+                  title: 'List Items',
+                  type: 'array',
+                  description: 'Add items to the list',
+                  of: [{
+                      type: 'object',
+                      name: 'listItem',
+                      title: 'List Item',
+                      fields: [
+                          {
+                              name: 'text',
+                              title: 'Text',
+                              type: 'string',
+                              description: 'Add list item text.',
+                          },
+                      ]
+                  }]
+              },
+          ]
+      }]
+  },
     {
         name: 'image',
         title: 'Image', 
