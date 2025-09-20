@@ -13,6 +13,12 @@ export default defineType({
       description: 'Add a title.',
     },
     {
+      name: 'video',
+      title: 'Video',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
       name: 'images',
       title: 'Images',
       type: 'array',

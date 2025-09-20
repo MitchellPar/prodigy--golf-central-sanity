@@ -56,5 +56,8 @@ export default defineType({
     {
         type: 'golf',
     },
+    {
+        type: 'membership',
+    },
   ]
 })

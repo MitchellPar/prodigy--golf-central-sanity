@@ -70,6 +70,13 @@ export default defineType({
       description: 'Add content.',
     },
     {
+      name: 'bucketPriceTable',
+      title: 'Bucket Price Table',
+      type: 'boolean',
+      description: 'Add a bucket price table.',
+      initialValue: false,
+    },
+    {
       name: 'lists',
       title: 'Lists',
       type: 'array',

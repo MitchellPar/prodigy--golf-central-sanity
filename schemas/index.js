@@ -39,6 +39,7 @@ import faq from './blocks/faq'
 import featureImage from './blocks/featureImage'
 import contact from './blocks/contact'
 import golf from './blocks/golf'
+import membership from './blocks/membership'
 
 
 
@@ -66,6 +67,7 @@ const blocks = [
     faq,
     contact,
     golf,
+    membership,
 ]
 
 
