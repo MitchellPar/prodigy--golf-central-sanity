@@ -37,7 +37,6 @@ export default defineType({
           // }
         ],
       },
-      // Paragraphs
       type: 'block',
     }),
     defineArrayMember({
