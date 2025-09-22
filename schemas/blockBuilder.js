@@ -59,5 +59,11 @@ export default defineType({
     {
         type: 'membership',
     },
+    {
+        type: 'functionEmail',
+    },
+    {
+        type: 'sessions',
+    },
   ]
 })

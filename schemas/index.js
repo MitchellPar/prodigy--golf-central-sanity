@@ -40,6 +40,8 @@ import featureImage from './blocks/featureImage'
 import contact from './blocks/contact'
 import golf from './blocks/golf'
 import membership from './blocks/membership'
+import functionEmail from './blocks/functionEmail'
+import sessions from './blocks/sessions'
 
 
 
@@ -68,6 +70,8 @@ const blocks = [
     contact,
     golf,
     membership,
+    functionEmail,
+    sessions,
 ]
 
 

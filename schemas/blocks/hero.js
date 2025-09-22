@@ -43,6 +43,13 @@ export default defineType({
       ]
     },
     {
+      name: 'landerButton',
+      title: 'Lander Button',
+      type: 'boolean',
+      description: 'Add a lander button.',
+      initialValue: false,
+    },
+    {
         name: 'linkText',
         title: 'LinkText',
         type: 'string',
