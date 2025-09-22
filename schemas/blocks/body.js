@@ -31,10 +31,6 @@ export default defineType({
             title: 'Strong',
             value: 'strong',
           },
-          // {
-          //   title: 'Small',
-          //   value: 'small',
-          // }
         ],
       },
       type: 'block',
