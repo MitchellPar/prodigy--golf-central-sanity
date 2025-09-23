@@ -131,12 +131,6 @@ export default defineType({
           }
         ]
     },
-    // {
-    //     name: 'content',
-    //     title: 'Content',
-    //     type: 'body',
-    //     description: 'Add content.',
-    // },
     {
         name: 'linkText',
         title: 'LinkText',
