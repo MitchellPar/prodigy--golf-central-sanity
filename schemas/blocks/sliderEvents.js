@@ -59,6 +59,12 @@ export default defineType({
                     description: 'Add a category.',
                 },
                 {
+                    name: 'cost',
+                    title: 'Cost',
+                    type: 'string',
+                    description: 'Add a cost.',
+                },
+                {
                     name: 'image',
                     title: 'Image', 
                     type: 'image',

@@ -31,6 +31,13 @@ export default defineType({
       type: 'text',
       description: 'Add content.',
     },
+    {
+      name: 'scrollButton',
+      title: 'Scroll Button',
+      type: 'boolean',
+      description: 'Add a scroll button.',
+      initialValue: false,
+    },
   ],
   preview: {
     select: {
