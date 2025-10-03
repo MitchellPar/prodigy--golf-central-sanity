@@ -18,6 +18,9 @@ export default defineType({
       type: 'boolean',
       initialValue: false,
     },
+
+
+    
     {
       name: 'images',
       title: 'Images',
