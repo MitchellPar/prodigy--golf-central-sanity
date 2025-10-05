@@ -31,6 +31,9 @@ export default defineType({
       type: 'text',
       description: 'Add content.',
     },
+
+
+    
     {
       name: 'scrollButton',
       title: 'Scroll Button',
