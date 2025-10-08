@@ -44,7 +44,11 @@ export default defineType({
   ],
 
 
+
+
   
+
+
   preview: {
     select: {
       titleLarge: 'titleLarge',
