@@ -33,7 +33,7 @@ export default defineType({
     },
 
 
-    
+
     {
       name: 'scrollButton',
       title: 'Scroll Button',
@@ -42,6 +42,9 @@ export default defineType({
       initialValue: false,
     },
   ],
+
+
+  
   preview: {
     select: {
       titleLarge: 'titleLarge',
