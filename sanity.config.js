@@ -1,7 +1,10 @@
+import { GiGolfTee } from "react-icons/gi";
+
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {studioStructure} from './studio/structure'
 
 export default defineConfig({
   name: 'default',
@@ -10,7 +13,12 @@ export default defineConfig({
   projectId: '7s3l82i3',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [structureTool({
+    name: 'golf-central',
+    title: 'Golf Central',
+    icon: GiGolfTee,
+    structure: studioStructure
+  }), visionTool()],
 
   schema: {
     types: schemaTypes,

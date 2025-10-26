@@ -1,5 +1,7 @@
 // documents
 import page from './documents/page'
+import lpPage from './documents/lp-page'
+import fpPage from './documents/fp-page'
 // import news from './documents/news'
 // import publications from './documents/publications'
 // import interactiveData from './documents/interactiveData'
@@ -14,7 +16,9 @@ import page from './documents/page'
 // import team from './documents/team'
 
 // singletons
-// import settings from './singletons/settings'
+import settings from './singletons/settings'
+import lpSettings from './singletons/lp-settings'
+import fpSettings from './singletons/fp-settings'
 
 // objects
 // import projectBlocks from './projectBlocks'
@@ -42,14 +46,16 @@ import golf from './blocks/golf'
 import membership from './blocks/membership'
 import functionEmail from './blocks/functionEmail'
 import sessions from './blocks/sessions'
+import headerNav from './blocks/headerNav'
+import footerNav from './blocks/footerNav'
 
 
 
 
 import seo from './seo'
 
-const documents = [page]
-// const singletons = [settings]
+const documents = [page, lpPage, fpPage]
+const singletons = [settings, lpSettings, fpSettings]
 const objects = [blockBuilder, link, seo]
 const blocks = [
     hero, 
@@ -72,7 +78,9 @@ const blocks = [
     membership,
     functionEmail,
     sessions,
+    headerNav,
+    footerNav
 ]
 
 
-export const schemaTypes = [...documents, ...objects, ...blocks]
+export const schemaTypes = [...documents, ...singletons, ...objects, ...blocks]

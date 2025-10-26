@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'page',
-  title: 'Golf Central Pages',
+  name: 'lpPage',
+  title: 'Landing Pocket Pages',
   type: 'document',
   groups: [
     {name: 'content', title: 'Content'},
@@ -73,7 +73,7 @@ export default defineType({
       media: 'mainImage',
     },
     prepare(selection) {
-      return {...selection, subtitle: 'Golf Central'}
+      return {...selection, subtitle: 'Landers Pocket'}
     },
   },
 })
