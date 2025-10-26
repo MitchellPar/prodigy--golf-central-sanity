@@ -2,6 +2,7 @@
 import page from './documents/page'
 import lpPage from './documents/lp-page'
 import fpPage from './documents/fp-page'
+import gcEvent from './documents/event'
 // import news from './documents/news'
 // import publications from './documents/publications'
 // import interactiveData from './documents/interactiveData'
@@ -54,7 +55,7 @@ import footerNav from './blocks/footerNav'
 
 import seo from './seo'
 
-const documents = [page, lpPage, fpPage]
+const documents = [page, lpPage, fpPage, gcEvent]
 const singletons = [settings, lpSettings, fpSettings]
 const objects = [blockBuilder, link, seo]
 const blocks = [

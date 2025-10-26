@@ -1,7 +1,7 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'gcEvents',
+  name: 'event',
   title: 'Golf Central Events',
   type: 'document',
   groups: [

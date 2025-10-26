@@ -25,6 +25,14 @@ export const studioStructure: StructureResolver = (S) =>
                         S.documentTypeList('page')
                             .title('Golf Central Pages')
                         ),
+                        // Events for Golf Central
+                        S.listItem()
+                        .title('Events')
+                        .icon(FiCalendar)
+                        .child(
+                        S.documentTypeList('event')
+                            .title('Golf Central Events')
+                        ),
                         // Settings for Golf Central
                         S.listItem()
                         .title('Settings')
