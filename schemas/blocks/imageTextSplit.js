@@ -142,6 +142,17 @@ export default defineType({
         title: 'Button Link',
         type: 'link',
     },
+    {
+        name: 'linkTextExtra',
+        title: 'LinkText Extra',
+        type: 'string',
+        description: 'Add link text.',
+    },
+    {
+        name: 'buttonLinkExtra',
+        title: 'Button Link Extra',
+        type: 'link',
+    },
   ],
   preview: {
     select: {
