@@ -1,5 +1,5 @@
 import { GiGolfTee } from "react-icons/gi";
-
+import {media} from 'sanity-plugin-media'
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
@@ -18,7 +18,7 @@ export default defineConfig({
     title: 'Golf Central',
     icon: GiGolfTee,
     structure: studioStructure
-  }), visionTool()],
+  }), visionTool(), media()],
 
   schema: {
     types: schemaTypes,
