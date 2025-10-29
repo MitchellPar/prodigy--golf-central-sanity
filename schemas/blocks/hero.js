@@ -9,13 +9,14 @@ export default defineType({
     {
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'text',
       description: 'Add a title.',
     },
     {
       name: 'video',
       title: 'Video',
       type: 'boolean',
+      description: 'Video is locally uploaded to the site for bandwidth and performance.',
       initialValue: false,
     },
 

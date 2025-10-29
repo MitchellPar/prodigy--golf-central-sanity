@@ -157,10 +157,14 @@ export default defineType({
   preview: {
     select: {
       title: 'title',
+      subTitle: 'subTitle',
+      contentTitle: 'contentTitle',
+      contentAltTitle: 'contentAltTitle',
     },
-    prepare({title}) {
+    prepare({title, subTitle, contentTitle, contentAltTitle}) {
+      const previewTitle = title || subTitle || contentTitle || contentAltTitle
       return {
-        title: `${title}`,
+        title: previewTitle || 'Image Text Split',
         subtitle: 'Image Text Split'
       }
     }
