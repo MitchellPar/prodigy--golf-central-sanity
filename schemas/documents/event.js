@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineType} from 'sanity'
 
 export default defineType({
   name: 'event',
@@ -9,71 +9,74 @@ export default defineType({
     {name: 'seo', title: 'SEO'},
   ],
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Title',
+    {
+      name: 'link',
+      title: 'Link',
       type: 'string',
-      group: 'content',
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      description: 'Add a link.',
+  },
+  {
+      name: 'month',
+      title: 'Month',
+      type: 'string',
+      description: 'Add a month.',
+  },
+  {
+      name: 'day',
+      title: 'Day',
+      type: 'string',
+      description: 'Add a day.',
+  },
+  {
+      name: 'time',
+      title: 'Time',
+      type: 'string',
+      description: 'Add a time.',
+  },
+  {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+      description: 'Add a name.',
+  },
+  {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+      description: 'Add a category.',
+  },
+  {
+      name: 'cost',
+      title: 'Cost',
+      type: 'string',
+      description: 'Add a cost.',
+  },
+  {
+      name: 'image',
+      title: 'Image', 
+      type: 'image',
+      description: 'Add an image.',
       options: {
-        source: 'title',
-        maxLength: 96,
+        hotspot: true
       },
-      group: 'content',
-    }),
-    // defineField({
-    //   name: 'parent',
-    //   title: 'Parent',
-    //   type: 'reference',
-    //   to: [{type: 'page'}],
-    //   group: 'content',
-    // }),
-    defineField({
-      name: 'blockBuilder',
-      title: 'Block Builder',
-      type: 'blockBuilder',
-      group: 'content',
-    }),
-
-    // defineField({
-    //   name: 'mainImage',
-    //   title: 'Main image',
-    //   type: 'image',
-    //   options: {
-    //     hotspot: true,
-    //   },
-    //   group: 'content',
-    // }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-      group: 'content',
-    }),
-    // defineField({
-    //   name: 'body',
-    //   title: 'Body',
-    //   type: 'blockContent',
-    // }),
-    defineField({
-      name: 'seo',
-      title: "SEO",
-      type: "seo",
-      group: "seo",
-    }),
+      fields: [
+        {
+          name: 'alt',
+          type: 'string', 
+          description: 'Add an alt-tag.',
+          validation: Rule => Rule.required()
+        }
+      ]
+  },
   ],
 
   preview: {
     select: {
-      title: 'title',
-      media: 'mainImage',
+      name: 'name',
+      media: 'image',
     },
-    prepare(selection) {
-      return {...selection}
+    prepare({name, media}) {
+      return { title: name, media }
     },
   },
 })

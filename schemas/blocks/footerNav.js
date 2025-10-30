@@ -5,6 +5,7 @@ export default defineField({
     title: 'Footer Nav',
     type: 'array',
     of: [
+
         {
             name: 'navColumn',
             type: 'object',
