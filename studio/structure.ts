@@ -59,7 +59,7 @@ export const studioStructure: StructureResolver = (S) =>
                          S.listItem()
                          .title('Settings')
                          .icon(CogIcon)
-                         .child(S.editor().title('Landers Pocket Settings').schemaType('settings').documentId('settings')),
+                         .child(S.editor().title('Landers Pocket Settings').schemaType('lpSettings').documentId('lpSettings')),
                     ])
                 ),
             S.listItem()
@@ -81,7 +81,7 @@ export const studioStructure: StructureResolver = (S) =>
                         S.listItem()
                         .title('Settings')
                         .icon(CogIcon)
-                        .child(S.editor().title('4 Pines Settings').schemaType('settings').documentId('settings')),
+                        .child(S.editor().title('4 Pines Settings').schemaType('fpSettings').documentId('fpSettings')),
                     ]*/)
                 ),
         ])
