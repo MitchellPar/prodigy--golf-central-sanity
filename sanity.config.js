@@ -28,7 +28,7 @@ export default defineConfig({
       encryptionSalt: 'cceb3eadf707fa29c304d378b35ad1ada22fd930bde28b2a7c5e7982c57c4fc393c6054839bd8eeab9ee194b21e9d911ac8b9ef6b5e20b98f53aa5c67b140e18',
       /** You can customize the event type name to trigger on your Github workflows */
       githubEventType: 'webhook-trigger',
-    }, media())
+    }), media()
   ],
 
   schema: {
