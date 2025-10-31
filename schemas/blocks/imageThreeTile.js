@@ -67,7 +67,7 @@ export default defineType({
     },
     prepare({title}) {
       return {
-        title: `${title}`,
+        title: `Image Three Tile`,
         subtitle: 'Image Three Tile'
       }
     }

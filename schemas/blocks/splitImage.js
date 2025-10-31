@@ -87,7 +87,7 @@ export default defineType({
     },
     prepare({title}) {
       return {
-        title: `${title}`,
+        title: `Split Image`,
         subtitle: 'Split Image'
       }
     }

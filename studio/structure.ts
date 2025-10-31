@@ -63,18 +63,18 @@ export const studioStructure: StructureResolver = (S) =>
                     ])
                 ),
             S.listItem()
-                .title('4 Pines (Coming Soon)')
+                .title('4 Pines')
                 .icon(TbBeerFilled)
                 .child(
                     S.list()
-                    .title('Coming Soon')
-                    .items(/*[
+                    .title('4 Pines')
+                    .items([
                         // Pages for Golf Central
                         S.listItem()
                         .title('Pages')
                         .icon(FiFileText)
                         .child(
-                        S.documentTypeList('lpPage')
+                        S.documentTypeList('fpPage')
                             .title('4 Pines Pages')
                         ),
                          // Settings for 4 Pines
@@ -82,7 +82,7 @@ export const studioStructure: StructureResolver = (S) =>
                         .title('Settings')
                         .icon(CogIcon)
                         .child(S.editor().title('4 Pines Settings').schemaType('fpSettings').documentId('fpSettings')),
-                    ]*/)
+                    ])
                 ),
         ])
             

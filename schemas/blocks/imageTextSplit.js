@@ -142,14 +142,29 @@ export default defineType({
         title: 'Button Link',
         type: 'link',
     },
+    {
+        name: 'linkTextExtra',
+        title: 'LinkText Extra',
+        type: 'string',
+        description: 'Add link text.',
+    },
+    {
+        name: 'buttonLinkExtra',
+        title: 'Button Link Extra',
+        type: 'link',
+    },
   ],
   preview: {
     select: {
       title: 'title',
+      subTitle: 'subTitle',
+      contentTitle: 'contentTitle',
+      contentAltTitle: 'contentAltTitle',
     },
-    prepare({title}) {
+    prepare({title, subTitle, contentTitle, contentAltTitle}) {
+      const previewTitle = title || subTitle || contentTitle || contentAltTitle
       return {
-        title: `${title}`,
+        title: previewTitle || 'Image Text Split',
         subtitle: 'Image Text Split'
       }
     }

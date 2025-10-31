@@ -9,13 +9,13 @@ export default defineType({
     {
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'text',
       description: 'Add a title.',
     },
     {
       name: 'subTitle',
       title: 'Sub Title',
-      type: 'string',
+      type: 'text',
       description: 'Add a sub title.',
     },
     {

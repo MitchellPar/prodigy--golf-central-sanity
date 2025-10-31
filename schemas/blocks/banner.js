@@ -30,7 +30,7 @@ export default defineType({
     {
       name: 'subTitle',
       title: 'Sub Title',
-      type: 'string',
+      type: 'text',
       description: 'Add a sub title.',
     },
     {
@@ -70,12 +70,15 @@ export default defineType({
   ],
   preview: {
     select: {
+      title: 'title',
+      subTitle: 'subTitle',
       content: 'content',
     },
-    prepare({content}) {
+    prepare({title, subTitle, content}) {
+      const previewTitle = title || subTitle || content
       return {
-        title: `${content}`,
-        subtitle: 'banner'
+        title: previewTitle || 'Banner',
+        subtitle: 'Banner'
       }
     }
   }

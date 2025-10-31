@@ -30,6 +30,18 @@ export default defineType({
       type: 'string',
       description: 'Add a phone number.',
     },
+    {
+      name: 'formEmbedCodeOne',
+      title: 'Form Embed Code One',
+      type: 'text',
+      description: 'Add a form embed code.',
+    },
+    {
+      name: 'formEmbedCodeTwo',
+      title: 'Form Embed Code Two',
+      type: 'text',
+      description: 'Add a form embed code.',
+    },
   ],
   preview: {
     select: {

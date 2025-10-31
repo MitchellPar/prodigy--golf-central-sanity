@@ -22,7 +22,7 @@ export default defineType({
     {
       name: 'titleSmall',
       title: 'Title Small',
-      type: 'string',
+      type: 'text',
       description: 'Add a title.',
     },
     {

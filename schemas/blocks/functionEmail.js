@@ -12,6 +12,12 @@ export default defineType({
       type: 'string',
       description: 'Add a title.',
     },
+    {
+      name: 'embedCode',
+      title: 'Embed Code',
+      type: 'text',
+      description: 'Add an embed code.',
+    },
   ],
   preview: {
     select: {
