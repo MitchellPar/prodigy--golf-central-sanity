@@ -40,6 +40,13 @@ export default defineType({
         description: 'Padding layout options.',
     },
     {
+      name: 'bgGreen',
+      title: 'Background Green',
+      type: 'boolean',
+      description: 'Green background color toggle.',
+      initialValue: false,
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',

@@ -13,6 +13,13 @@ export default defineType({
       description: 'Add a title.',
     },
     {
+      name: 'bgGreen',
+      title: 'Background Green',
+      type: 'boolean',
+      description: 'Green background color toggle.',
+      initialValue: false,
+    },
+    {
         name: 'tiles',
         title: 'Tiles',
         type: 'array',

@@ -3,6 +3,7 @@ import page from './documents/page'
 import lpPage from './documents/lp-page'
 import fpPage from './documents/fp-page'
 import gcEvent from './documents/event'
+import fpEvent from './documents/fp-event'
 // import news from './documents/news'
 // import publications from './documents/publications'
 // import interactiveData from './documents/interactiveData'
@@ -49,13 +50,15 @@ import functionEmail from './blocks/functionEmail'
 import sessions from './blocks/sessions'
 import headerNav from './blocks/headerNav'
 import footerNav from './blocks/footerNav'
+import mapCta from './blocks/mapCta'
+import functions from './blocks/functions'
 
 
 
 
 import seo from './seo'
 
-const documents = [page, lpPage, fpPage, gcEvent]
+const documents = [page, lpPage, fpPage, gcEvent, fpEvent]
 const singletons = [settings, lpSettings, fpSettings]
 const objects = [blockBuilder, link, seo]
 const blocks = [
@@ -80,7 +83,9 @@ const blocks = [
     functionEmail,
     sessions,
     headerNav,
-    footerNav
+    footerNav,
+    mapCta,
+    functions,
 ]
 
 

@@ -65,5 +65,11 @@ export default defineType({
     {
         type: 'sessions',
     },
+    {
+        type: 'mapCta',
+    },
+    {
+        type: 'functions',
+    },
   ]
 })

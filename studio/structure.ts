@@ -77,6 +77,13 @@ export const studioStructure: StructureResolver = (S) =>
                         S.documentTypeList('fpPage')
                             .title('4 Pines Pages')
                         ),
+                        S.listItem()
+                        .title('Events')
+                        .icon(FiCalendar)
+                        .child(
+                        S.documentTypeList('fpEvent')
+                            .title('4 Pines Events')
+                        ),
                          // Settings for 4 Pines
                         S.listItem()
                         .title('Settings')

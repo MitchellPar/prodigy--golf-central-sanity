@@ -7,6 +7,13 @@ export default defineType({
   icon: SplitVerticalIcon,
   fields: [
     {
+      name: 'bgGreen',
+      title: 'Background Green',
+      type: 'boolean',
+      description: 'Green background color toggle.',
+      initialValue: false,
+    },
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
