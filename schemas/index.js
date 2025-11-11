@@ -25,6 +25,7 @@ import fpSettings from './singletons/fp-settings'
 // objects
 // import projectBlocks from './projectBlocks'
 import blockBuilder from './blockBuilder'
+import blockLayout from './blockLayout'
 import link from './link'
 
 // blocks
@@ -60,7 +61,7 @@ import seo from './seo'
 
 const documents = [page, lpPage, fpPage, gcEvent, fpEvent]
 const singletons = [settings, lpSettings, fpSettings]
-const objects = [blockBuilder, link, seo]
+const objects = [blockBuilder, blockLayout, link, seo]
 const blocks = [
     hero, 
     imageTextSplit,
