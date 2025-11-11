@@ -66,6 +66,13 @@ export default defineField({
           group: 'navigation',
       },
       {
+          name: 'address',
+          title: 'Address',
+          type: 'text',
+          description: 'Add an address.',
+          group: 'navigation',
+      },
+      {
           name: 'phone',
           title: 'Phone',
           type: 'string',
