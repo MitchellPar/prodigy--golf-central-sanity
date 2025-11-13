@@ -7,6 +7,10 @@ export default defineType({
   icon: TextIcon,
   fields: [
     {
+      name: 'layout',
+      type: 'blockLayout'
+    },
+    {
         name: 'centered',
         title: 'Centered',
         type: 'boolean',
