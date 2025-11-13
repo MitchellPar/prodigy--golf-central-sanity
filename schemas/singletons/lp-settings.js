@@ -31,10 +31,17 @@ export default defineField({
             group: 'general',
         }),
         {
-          name: 'bookNowLink',
-          title: 'Book Now Link',
+          name: 'bookGolfLink',
+          title: 'Book Golf Link',
           type: 'string',
-          description: 'Add a book now link.',
+          description: 'Add a book golf link.',
+          group: 'navigation',
+      },
+        {
+          name: 'bookBreweryLink',
+          title: 'Book Brewery Link',
+          type: 'string',
+          description: 'Add a book brewery link.',
           group: 'navigation',
       },
         {
