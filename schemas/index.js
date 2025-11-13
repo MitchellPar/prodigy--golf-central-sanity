@@ -53,6 +53,7 @@ import footerNav from './blocks/footerNav'
 import mapCta from './blocks/mapCta'
 import functions from './blocks/functions'
 import contentBlock from './blocks/contentBlock'
+import functionSingle from './blocks/functionSingle'
 
 
 
@@ -87,6 +88,7 @@ const blocks = [
     mapCta,
     functions,
     contentBlock,
+    functionSingle,
 ]
 
 

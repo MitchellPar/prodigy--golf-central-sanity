@@ -74,5 +74,8 @@ export default defineType({
     {
         type: 'contentBlock',
     },
+    {
+        type: 'functionSingle',
+    },
   ]
 })
