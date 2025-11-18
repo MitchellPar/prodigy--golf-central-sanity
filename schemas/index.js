@@ -4,6 +4,7 @@ import lpPage from './documents/lp-page'
 import fpPage from './documents/fp-page'
 import gcEvent from './documents/event'
 import fpEvent from './documents/fp-event'
+import openingHours from './documents/openingHours'
 // import news from './documents/news'
 // import publications from './documents/publications'
 // import interactiveData from './documents/interactiveData'
@@ -60,7 +61,7 @@ import functionSingle from './blocks/functionSingle'
 
 import seo from './seo'
 
-const documents = [page, lpPage, fpPage, gcEvent, fpEvent]
+const documents = [page, lpPage, fpPage, gcEvent, fpEvent, openingHours]
 const singletons = [settings, lpSettings, fpSettings]
 const objects = [blockBuilder, blockLayout, link, seo]
 const blocks = [
