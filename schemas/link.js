@@ -31,7 +31,31 @@ export default defineType({
         name: 'internalLink',
         title: 'Internal Link',
         type: 'reference',
-        to: [{type: 'page'}],
+        to: [{type: 'page'}, {type: 'fpPage'}, {type: 'lpPage'}],
+        options: {
+            filter: ({document}) => {
+                // Filter pages based on the root document type
+                if (document?._type === 'fpSettings') {
+                    return {
+                        filter: '_type == "fpPage"'
+                    }
+                }
+                if (document?._type === 'lpSettings') {
+                    return {
+                        filter: '_type == "lpPage"'
+                    }
+                }
+                if (document?._type === 'settings') {
+                    return {
+                        filter: '_type == "page"'
+                    }
+                }
+                // Default: show all pages if we can't determine context
+                return {
+                    filter: '_type in ["page", "fpPage", "lpPage"]'
+                }
+            }
+        },
         hidden: ({parent}) => parent?.type !== 'internal'
     },
     {
