@@ -77,5 +77,8 @@ export default defineType({
     {
         type: 'functionSingle',
     },
+    {
+        type: 'mapCtaGc',
+    },
   ]
 })

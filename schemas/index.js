@@ -56,7 +56,7 @@ import mapCta from './blocks/mapCta'
 import functions from './blocks/functions'
 import contentBlock from './blocks/contentBlock'
 import functionSingle from './blocks/functionSingle'
-
+import mapCtaGc from './blocks/mapCtaGc'
 
 
 import seo from './seo'
@@ -91,6 +91,7 @@ const blocks = [
     functions,
     contentBlock,
     functionSingle,
+    mapCtaGc,
 ]
 
 
